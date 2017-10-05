@@ -17,8 +17,8 @@ define(function (require) {
       'submit': 'beforeSubmit',
     },
 
-    itemView: ListItemView,
-    itemViewContainer: "tbody",
+    childView: ListItemView,
+    childViewContainer: "tbody",
     template: _.template(tpl),
 
     initialize: function (options) {
@@ -33,7 +33,7 @@ define(function (require) {
       });
     },
 
-    itemViewOptions: function(options) {
+    childViewOptions: function(options) {
       options.set('mods', this.mods);
     },
 

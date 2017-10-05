@@ -17,11 +17,11 @@ define(function (require) {
     template: template,
 
     events: {
-      "click .destroy": "destroy",
-      "click .update": "update",
+      "click .destroy": "deleteMod",
+      "click .update": "updateMod",
     },
 
-    destroy: function (event) {
+    deleteMod: function (event) {
       var self = this;
       sweetAlert({
         title: "Are you sure?",
@@ -36,7 +36,7 @@ define(function (require) {
       });
     },
 
-    update: function (event) {
+    updateMod: function (event) {
       var self = this;
       event.preventDefault();
 

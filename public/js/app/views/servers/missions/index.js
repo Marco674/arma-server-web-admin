@@ -11,7 +11,7 @@ define(function (require) {
       RotationListView    = require('app/views/servers/missions/rotation/list'),
       tpl                 = require('text!tpl/servers/missions/index.html');
 
-  return Marionette.Layout.extend({
+  return Marionette.LayoutView.extend({
     template: _.template(tpl),
 
     regions: {

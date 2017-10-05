@@ -12,8 +12,8 @@ define(function (require) {
       tpl                 = require('text!tpl/servers/parameters/list.html');
 
   return Marionette.CompositeView.extend({
-    itemView: ListItemView,
-    itemViewContainer: "tbody",
+    childView: ListItemView,
+    childViewContainer: "tbody",
     template: _.template(tpl),
 
     events: {

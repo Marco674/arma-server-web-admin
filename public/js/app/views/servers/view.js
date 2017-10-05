@@ -15,7 +15,7 @@ define(function (require) {
       PlayersView         = require('app/views/servers/players'),
       tpl                 = require('text!tpl/servers/view.html');
 
-  return Marionette.Layout.extend({
+  return Marionette.LayoutView.extend({
     template: _.template(tpl),
 
     regions: {

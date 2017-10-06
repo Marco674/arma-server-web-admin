@@ -34,7 +34,6 @@ define(function (require) {
 
     initialize: function () {
       layoutView.navigation.show(new NavigationView({servers: servers}));
-      sweetAlertInitialize();
       missions.fetch();
 
       var initialized = false;
